@@ -8,7 +8,9 @@ license="AllRightsReserved"
     displayName="ItemResistance"
     credits="Apex - Programming"
     authors="ApexStudios"
-    description="ItemResistance"
+    description="ItemResistance is a simple mod which allows dropped block items to resist explosions."
+    logoFile="logo.png"
+    displayURL="https://modrinth.com/mod/itemresistance"
 
 [[dependencies.itemresistance]]
     modId="apexcore"
