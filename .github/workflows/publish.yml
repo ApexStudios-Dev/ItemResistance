@@ -7,9 +7,11 @@ on:
 jobs:
     publish:
         uses: ApexStudios-Dev/.github/.github/workflows/publish-mod.yml@master
-        secrets:
-            MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-            MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-            CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
-#            MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
-            DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        secrets: inherit
+        with:
+            curseforge_id: "416161"
+            # modrinth_id: "XDyegkJL"
+            release_type: "alpha"
+            name: "ItemResistance"
+            logo: "https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png"
+            color: "11865614" # B50E0E
