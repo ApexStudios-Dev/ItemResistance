@@ -15,4 +15,3 @@ jobs:
             name: "ItemResistance"
             logo: "https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png"
             color: "11865614" # B50E0E
-            github_package_url: "https://maven.pkg.github.com/ApexStudios-Dev/ItemResistance"
