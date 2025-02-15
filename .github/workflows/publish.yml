@@ -10,7 +10,7 @@ jobs:
         secrets: inherit
         with:
             curseforge_id: "416161"
-            # modrinth_id: "XDyegkJL"
+            modrinth_id: "XDyegkJL"
             release_type: "alpha"
             name: "ItemResistance"
             logo: "https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png"
