@@ -1,3 +1,5 @@
+name: Publish
+
 on:
     workflow_dispatch:
     push:
@@ -6,13 +8,13 @@ on:
 
 jobs:
     publish:
+        name: Publish ItemResistance
         uses: ApexStudios-Dev/.github/.github/workflows/publish-mod.yml@master
-        secrets: inherit
         with:
-            curseforge_id: "416161"
-            modrinth_id: "XDyegkJL"
-            release_type: "alpha"
-            name: "ItemResistance"
-            logo: "https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png"
-            color: "11865614" # B50E0E
+            display_name: ItemResistance
+            logo_url: https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png
+            color: 0xB50E0E
+            release_type: alpha
             artifact_id: itemresistance
+            curseforge_id: "416161"
+            modrinth_id: XDyegkJL
