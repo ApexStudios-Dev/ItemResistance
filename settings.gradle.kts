@@ -9,7 +9,7 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if(requested.id.namespace == "apex-conventions") {
-                useVersion("0.1.57")
+                useVersion("0.1.58")
             }
         }
     }
@@ -17,7 +17,7 @@ pluginManagement {
 
 dependencyResolutionManagement {
     versionCatalogs.create("libs") {
-        library("apexcore", "dev.apexstudios", "apexcore").version("21.5.1")
+        library("apexcore", "dev.apexstudios", "apexcore").version("21.5.2")
     }
 }
 
