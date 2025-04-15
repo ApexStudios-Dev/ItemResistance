@@ -1,21 +1,21 @@
 name: Publish
 
 on:
-    workflow_dispatch:
-    push:
-        branches: [ "**/main" ]
-        paths: [ "**/src/**" ]
+  workflow_dispatch:
+  push:
+    branches: [ "**/main" ]
+    paths: [ "**/src/**" ]
 
 jobs:
-    publish:
-        name: Publish ItemResistance
-        uses: ApexStudios-Dev/.github/.github/workflows/publish-mod.yml@master
-        secrets: inherit
-        with:
-            display_name: ItemResistance
-            logo_url: https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png
-            color: 0xB50E0E
-            release_type: release
-            artifact_id: itemresistance
-            curseforge_id: "416161"
-            modrinth_id: XDyegkJL
+  publish:
+    name: Publish ItemResistance
+    uses: ApexStudios-Dev/.github/.github/workflows/publish-mod.yml@master
+    secrets: inherit
+    with:
+      display_name: ItemResistance
+      logo_url: https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/new/item_resistance.png
+      color: 0xB50E0E
+      release_type: release
+      artifact_id: itemresistance
+      curseforge_id: "416161"
+      modrinth_id: XDyegkJL
