@@ -14,8 +14,8 @@ jobs:
       java-version: 21
       java-vendor: temurin
       publish-task: ':publishReleasePublicationToApexStudios-ReleasesRepository'
-      curseforge-id: '835372' # '416161'
-      modrinth-id: 'EjjiYArZ' # 'XDyegkJL'
+      curseforge-id: '416161'
+      modrinth-id: 'XDyegkJL'
       artifact-id: itemresistance
       display-name: ItemResistance
       release-type: release
