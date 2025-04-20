@@ -19,5 +19,5 @@ jobs:
       artifact-id: itemresistance
       display-name: ItemResistance
       release-type: release
-      logo-url: 'https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/itemresistance/logo.png'
+      logo-url: 'https://raw.githubusercontent.com/ApexStudios-Dev/.github/refs/heads/master/assets/minecraft/itemresistance/banner.png'
       color: 0xB50E0E
