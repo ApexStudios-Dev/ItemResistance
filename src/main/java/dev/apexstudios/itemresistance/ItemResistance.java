@@ -1,7 +1,7 @@
 package dev.apexstudios.itemresistance;
 
-import dev.apexstudios.apexcore.lib.registree.Registree;
 import dev.apexstudios.itemresistance.mixin.ServerExplosionAccessor;
+import dev.apexstudios.registree.api.Registree;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
@@ -18,7 +18,7 @@ import net.neoforged.neoforge.event.level.ExplosionEvent;
 @Mod(ItemResistance.ID)
 public final class ItemResistance {
     public static final String ID = "itemresistance";
-    public static final Registree REGISTREE = new Registree(ID);
+    public static final Registree REGISTREE = Registree.create(ID);
     public static final GameRules.Key<GameRules.BooleanValue> ALLOW_EXPLOSION = REGISTREE.registerBooleanGameRule("allow_explosions", GameRules.Category.MISC, true);
 
     public ItemResistance(IEventBus modBus) {
