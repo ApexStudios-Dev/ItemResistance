@@ -2,14 +2,15 @@ package dev.apexstudios.itemresistance;
 
 import dev.apexstudios.itemresistance.mixin.ServerExplosionAccessor;
 import dev.apexstudios.registree.api.Registree;
+import dev.apexstudios.registree.api.holder.DeferredGameRule;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.BlockItemStateProperties;
-import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.ServerExplosion;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.gamerules.GameRuleCategory;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
@@ -19,7 +20,7 @@ import net.neoforged.neoforge.event.level.ExplosionEvent;
 public final class ItemResistance {
     public static final String ID = "itemresistance";
     public static final Registree REGISTREE = Registree.create(ID);
-    public static final GameRules.Key<GameRules.BooleanValue> ALLOW_EXPLOSION = REGISTREE.registerBooleanGameRule("allow_explosions", GameRules.Category.MISC, true);
+    public static final DeferredGameRule<Boolean> ALLOW_EXPLOSION = REGISTREE.registerBooleanGameRule("allow_explosions", GameRuleCategory.MISC, true);
 
     public ItemResistance(IEventBus modBus) {
         REGISTREE.registerEvents(modBus);
@@ -28,7 +29,7 @@ public final class ItemResistance {
             var level = (ServerLevel) event.getLevel();
             var gameRules = level.getGameRules();
 
-            if(!gameRules.getBoolean(ALLOW_EXPLOSION))
+            if(!gameRules.get(ALLOW_EXPLOSION.value()))
                 event.setCanceled(true);
         });
     }
