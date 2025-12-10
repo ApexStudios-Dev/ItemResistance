@@ -1,4 +1,4 @@
 {
-  "gamerule.itemresistance:allow_explosions": "Allow Explosions",
-  "gamerule.itemresistance:allow_explosions.description": "Disables all explosions when disabled"
+  "gamerule.itemresistance.allow_explosions": "Allow Explosions",
+  "gamerule.itemresistance.allow_explosions.description": "Disables all explosions when disabled"
 }
