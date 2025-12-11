@@ -13,7 +13,7 @@ public final class ItemResistanceDataEntryPoint {
         ResourceGenerator.of(modBus, generator -> {
             generator.pack()
                     .providing(ProviderTypes.LANGUAGE, (context, provider) -> provider
-                            .add(ItemResistance.ALLOW_EXPLOSION, "Allow Explosions", "Disables all explosions when disabled")
+                            .addGameRule(ItemResistance.ALLOW_EXPLOSION, "Allow Explosions", "Disables all explosions when disabled")
                     );
         });
     }
