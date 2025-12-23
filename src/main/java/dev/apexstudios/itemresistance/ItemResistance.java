@@ -42,7 +42,7 @@ public final class ItemResistance {
         var blockState = blockStateProperties.isEmpty() ? block.defaultBlockState() : blockStateProperties.apply(block.defaultBlockState());
 
         // similar logic as `ServerExplosion#calculateExplosionPositions` but for single point
-        var power = explosion.radius() * (.7F + level.random.nextFloat() * .6F);
+        var power = explosion.radius() * (.7F + level.getRandom().nextFloat() * .6F);
 
         for(; power > 0F; power -= .22500001F) {
             var resistance = calculator.getBlockExplosionResistance(explosion, level, pos, blockState, level.getFluidState(pos));
