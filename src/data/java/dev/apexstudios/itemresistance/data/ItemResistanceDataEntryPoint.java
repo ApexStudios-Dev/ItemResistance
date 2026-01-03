@@ -1,7 +1,7 @@
 package dev.apexstudios.itemresistance.data;
 
-import dev.apexstudios.apexcore.lib.data.ProviderTypes;
-import dev.apexstudios.apexcore.lib.data.ResourceGenerator;
+import dev.apexstudios.apexcore.api.data.ProviderTypes;
+import dev.apexstudios.apexcore.api.data.ResourceGenerator;
 import dev.apexstudios.itemresistance.ItemResistance;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
