@@ -1,8 +1,9 @@
 package dev.apexstudios.itemresistance;
 
 import dev.apexstudios.itemresistance.mixin.ServerExplosionAccessor;
-import dev.apexstudios.registree.api.Registree;
-import dev.apexstudios.registree.api.holder.DeferredGameRule;
+import dev.apexstudios.registree.Registree;
+import dev.apexstudios.registree.holder.DeferredGameRule;
+import dev.apexstudios.registree.registrar.GameRuleRegistrar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
@@ -20,7 +21,8 @@ import net.neoforged.neoforge.event.level.ExplosionEvent;
 public final class ItemResistance {
     public static final String ID = "itemresistance";
     public static final Registree REGISTREE = Registree.create(ID);
-    public static final DeferredGameRule<Boolean> ALLOW_EXPLOSION = REGISTREE.registerBooleanGameRule("allow_explosions", GameRuleCategory.MISC, true);
+    public static final GameRuleRegistrar GAME_RULES = REGISTREE.gameRules();
+    public static final DeferredGameRule<Boolean> ALLOW_EXPLOSION = GAME_RULES.registerBoolean("allow_explosions", GameRuleCategory.MISC, true);
 
     public ItemResistance(IEventBus modBus) {
         REGISTREE.registerEvents(modBus);
