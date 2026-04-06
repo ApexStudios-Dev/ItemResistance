@@ -20,3 +20,4 @@ jobs:
       artifact-id: itemresistance
       display-name: ItemResistance
       use-self-runner: false
+      build-task: ':build'
