@@ -8,7 +8,8 @@ displayName = "ItemResistance"
 credits = "Apex - Programming"
 authors = "ApexStudios"
 description = "ItemResistance is a simple mod which allows dropped block items to resist explosions."
-logoFile = "logo.png"
+logoFile = "banner.png"
+iconFile = "logo.png"
 displayURL = "https://modrinth.com/mod/itemresistance"
 
 [[dependencies.itemresistance]]
