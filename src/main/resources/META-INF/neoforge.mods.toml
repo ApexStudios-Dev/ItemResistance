@@ -14,25 +14,23 @@ displayURL = "https://modrinth.com/mod/itemresistance"
 [[dependencies.itemresistance]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.1,26.2)"
+versionRange = "[26.2,26.3)"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.itemresistance]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.1,26.2)"
+versionRange = "[26.2-alpha,26.3)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.itemresistance]]
 modId = "apexcore"
 type = "required"
-versionRange = "[26.1,26.2)"
+versionRange = "[26.2,26.3)"
 [dependencies.itemresistance.mc-publish]
 modrinth = "xl3myxch"
 curseforge = "550778"
 
-#[[accessTransformers]]
-#    file="META-INF/accesstransformer.cfg"
 [[mixins]]
 config = "META-INF/itemresistance.mixins.json"
