@@ -10,7 +10,7 @@ pluginManagement {
         resolutionStrategy {
             eachPlugin {
                 if(requested.id.namespace == "apex-conventions") {
-                    useVersion("0.1.101")
+                    useVersion("0.1.102")
                 }
             }
         }
@@ -22,7 +22,7 @@ dependencyResolutionManagement {
         version("neoforge", "26.3.0.0-beta")
 
         library("registree", "dev.apexstudios", "registree").version("26.3.1-beta-pr-37")
-        library("apexcore", "dev.apexstudios", "apexcore").version("26.3.0-beta-pr-96")
+        library("apexcore", "dev.apexstudios", "apexcore").version("26.3.1-beta-pr-96")
         bundle("apexcore", listOf("registree", "apexcore"))
     }
 }
