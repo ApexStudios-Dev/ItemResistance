@@ -11,8 +11,6 @@ final class IRLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        var key = ItemResistance.ALLOW_EXPLOSION.value().getDescriptionId();
-        add(key, "Allow Explosions");
-        add(key + ".description", "Disables all explosions when disabled");
+        addGameRule(ItemResistance.ALLOW_EXPLOSION, "Allow Explosions", "Disables all explosions when disabled");
     }
 }
