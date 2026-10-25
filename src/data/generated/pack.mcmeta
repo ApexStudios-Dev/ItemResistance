@@ -1,6 +1,8 @@
 {
   "pack": {
-    "description": "ItemResistance resources",
+    "description": {
+      "translate": "pack.itemresistance.desc"
+    },
     "max_format": 121,
     "min_format": 121
   }

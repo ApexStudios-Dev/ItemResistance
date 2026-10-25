@@ -1,0 +1,7 @@
+{
+  "gamerule.itemresistance.allow_explosions": "Allow Explosions",
+  "gamerule.itemresistance.allow_explosions.description": "Whether or not Explosions should be allowed",
+  "pack.itemresistance.desc": "ItemResistance resources",
+  "tag.block.itemresistance.explosion_immune": "Explosion Immune",
+  "tag.item.itemresistance.explosion_immune": "Explosion Immune"
+}

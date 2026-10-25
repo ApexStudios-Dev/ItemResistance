@@ -1,0 +1,14 @@
+{
+    "net/minecraft/world/level/block/state/BlockState": [
+        "dev/apexstudios/itemresistance/extensions/BlockStateExplosionExtension"
+    ],
+    "net/minecraft/world/level/block/Block": [
+        "dev/apexstudios/itemresistance/extensions/BlockExplosionExtension"
+    ],
+    "net/minecraft/world/item/ItemStack": [
+        "dev/apexstudios/itemresistance/extensions/ItemStackExplosionExtension"
+    ],
+    "net/minecraft/world/item/Item": [
+        "dev/apexstudios/itemresistance/extensions/ItemExplosionExtension"
+    ]
+}

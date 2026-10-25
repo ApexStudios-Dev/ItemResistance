@@ -1,0 +1,16 @@
+{
+    "$schema": "https://www.schemastore.org/sponge-mixins.json",
+    "required": true,
+    "package": "dev.apexstudios.itemresistance.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "mixins": [
+        "BlockItemMixin",
+        "BlockMixin",
+        "BlockStateMixin",
+        "ItemMixin",
+        "ItemStackMixin"
+    ],
+    "client": [],
+    "server": [],
+    "minVersion": "0.8"
+}
