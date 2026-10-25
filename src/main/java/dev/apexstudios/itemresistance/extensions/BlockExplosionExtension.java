@@ -5,13 +5,16 @@ import dev.apexstudios.itemresistance.api.ItemResistance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.ServerExplosion;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 public interface BlockExplosionExtension {
-    /// See [BlockStateExplosionExtension#isImmuneToExplosion$ItemResistance(ServerLevel, ItemEntity, ServerExplosion)]
+    /// @see ItemResistance#isImmuneToExplosion(BlockState, ServerLevel, ItemEntity, ServerExplosion)
     @ForOverride
-    default boolean isImmuneToExplosion$ItemResistance(BlockState blockState, ServerLevel level, ItemEntity entity, ServerExplosion explosion) {
+    default boolean isImmuneToExplosion(BlockState blockState, ServerLevel level, ItemEntity entity, ServerExplosion explosion) {
+        return isImmuneToExplosionDefault(blockState, level, entity, explosion);
+    }
+
+    static boolean isImmuneToExplosionDefault(BlockState blockState, ServerLevel level, ItemEntity entity, ServerExplosion explosion) {
         // tagged as explosion immune
         if(blockState.is(ItemResistance.EXPLOSION_IMMUNE.block())) {
             return true;
@@ -39,9 +42,5 @@ public interface BlockExplosionExtension {
         }
 
         return true;
-    }
-
-    private Block self() {
-        return (Block) this;
     }
 }

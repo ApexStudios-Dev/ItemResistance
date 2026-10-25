@@ -30,7 +30,7 @@ public final class ItemResistanceEntryPoint {
                     continue;
                 }
 
-                if(item.getItem().isImmuneToExplosion$ItemResistance(level, item, explosion)) {
+                if(ItemResistance.isImmuneToExplosion(item.getItem(), level, item, explosion)) {
                     itr.remove();
                 }
             }

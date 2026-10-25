@@ -35,5 +35,3 @@ curseforge = "550778"
 
 [[accessTransformers]]
 file = "META-INF/accesstransformer.cfg"
-[[mixins]]
-config = "META-INF/itemresistance.mixins.json"
